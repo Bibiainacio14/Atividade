@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Diga sim a adoção — Início</title>
+  <meta name="description" content="Diga sim a adoção — ONG dedicada ao resgate e adoção de animais.">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <img src="assets/images/logo.svg" alt="Logo Diga sim a adoção" class="logo">
+      <button id="menu-toggle" class="hamburger" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" class="main-nav" role="navigation" aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Início</a></li>
+          <li class="has-submenu">
+            <a href="projetos.html">Projetos</a>
+            <button class="submenu-toggle" aria-expanded="false" aria-controls="submenu-projetos" aria-label="Abrir submenu"></button>
+            <ul id="submenu-projetos" class="submenu">
+              <li><a href="projetos.html#voluntariado">Voluntariado</a></li>
+              <li><a href="projetos.html#doar">Como doar</a></li>
+            </ul>
+          </li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container main-content" role="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div>
+          <h1 id="hero-title">Diga sim a adoção</h1>
+          <p>Ajudamos animais a encontrar lares cheios de amor. Seja voluntário, adote ou apoie financeiramente nossos projetos.</p>
+          <a class="btn primary" href="projetos.html">Conheça nossos projetos</a>
+        </div>
+        <figure>
+          <img src="assets/images/hero.jpg" alt="Pessoa adotando um cachorro" width="520" height="350">
+          <figcaption>Adote — transforme uma vida.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="about" aria-labelledby="about-title">
+      <h2 id="about-title">Quem somos</h2>
+      <p>Somos a iniciativa "Diga sim a adoção" — dedicada ao resgate, reabilitação e adoção responsável de animais de rua.</p>
+
+      <div class="cards-grid">
+        <article class="card" aria-labelledby="mission">
+          <h3 id="mission">Missão</h3>
+          <p>Promover adoções responsáveis, educação e bem-estar animal.</p>
+        </article>
+        <article class="card" aria-labelledby="vision">
+          <h3 id="vision">Visão</h3>
+          <p>Comunidades mais empáticas e menos abandono animal.</p>
+        </article>
+        <article class="card" aria-labelledby="values">
+          <h3 id="values">Valores</h3>
+          <p>Transparência, amor e responsabilidade.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="informativos" aria-labelledby="info-title">
+      <h2 id="info-title">Informativos</h2>
+      <ul class="info-list">
+        <li><img src="assets/icons/info.svg" alt="" aria-hidden="true"> <a href="#">Dicas de adoção responsável</a></li>
+        <li><img src="assets/icons/calendar.svg" alt="" aria-hidden="true"> <a href="#">Próximos eventos</a></li>
+        <li><img src="assets/icons/news.svg" alt="" aria-hidden="true"> <a href="#">Notícias da ONG</a></li>
+      </ul>
+    </section>
+
+    <section id="contato" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contato</h2>
+      <div class="contact-grid">
+        <address>
+          <p>Rua Exemplo, 123 — Cidade, Estado</p>
+          <p>Telefone: <a href="tel:+5511999999999"><img src="assets/icons/phone.svg" alt="" aria-hidden="true"> (11) 99999-9999</a></p>
+          <p>Email: <a href="mailto:contato@digasimadocao.org"><img src="assets/icons/mail.svg" alt="" aria-hidden="true"> contato@digasimadocao.org</a></p>
+        </address>
+        <div class="socials" aria-hidden="false">
+          <a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="Instagram"></a>
+          <a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="Facebook"></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Diga sim a adoção — Todos os direitos reservados.</p>
+      <button id="contrast-toggle" class="btn secondary" aria-pressed="false">Modo alto contraste</button>
+      <button id="theme-toggle" class="btn secondary" aria-pressed="false">Alternar tema</button>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/app.js" defer></script>
+  <script src="js/router.js" defer></script>
+  <script src="js/ui.js" defer></script>
+</body>
+</html>

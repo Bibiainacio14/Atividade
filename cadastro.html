@@ -1,0 +1,73 @@
+\
+    <!doctype html>
+    <html lang="pt-BR">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>Cadastro — Diga sim a adoção</title>
+      <link rel="stylesheet" href="css/variables.css">
+      <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+      <a class="skip-link" href="#main">Ir para o conteúdo</a>
+      <header class="site-header">
+        <div class="container header-inner">
+          <img src="assets/images/logo.svg" alt="Logo Diga sim a adoção" class="logo">
+        </div>
+      </header>
+
+      <main id="main" class="container main-content" role="main">
+        <h1>Cadastro de Voluntário / Doador</h1>
+
+        <form id="cadastro-form" class="form" novalidate>
+          <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="nome">Nome completo</label>
+            <input id="nome" name="nome" type="text" required minlength="3" placeholder="Nome completo">
+
+            <label for="email">E‑mail</label>
+            <input id="email" name="email" type="email" required placeholder="seu@exemplo.com">
+
+            <label for="cpf">CPF</label>
+            <input id="cpf" name="cpf" type="text" inputmode="numeric" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required placeholder="000.000.000-00">
+
+            <label for="telefone">Telefone</label>
+            <input id="telefone" name="telefone" type="tel" inputmode="tel" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" required placeholder="(11) 91234-5678">
+
+            <label for="nascimento">Data de Nascimento</label>
+            <input id="nascimento" name="nascimento" type="date" required>
+          </fieldset>
+
+          <fieldset>
+            <legend>Endereço</legend>
+            <label for="cep">CEP</label>
+            <input id="cep" name="cep" type="text" inputmode="numeric" pattern="\d{5}-\d{3}" required placeholder="00000-000">
+
+            <label for="endereco">Endereço</label>
+            <input id="endereco" name="endereco" type="text" required>
+
+            <label for="cidade">Cidade</label>
+            <input id="cidade" name="cidade" type="text" required>
+
+            <label for="estado">Estado</label>
+            <select id="estado" name="estado" required>
+              <option value="">Selecione</option>
+              <option value="SP">São Paulo</option>
+              <option value="RJ">Rio de Janeiro</option>
+            </select>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="btn primary">Enviar</button>
+            <button type="reset" class="btn secondary">Limpar</button>
+          </div>
+        </form>
+
+      </main>
+      <footer class="site-footer"><div class="container"><p>&copy; Diga sim a adoção</p></div></footer>
+
+      <script src="js/forms.js" defer></script>
+      <script src="js/app.js" defer></script>
+    </body>
+    </html>

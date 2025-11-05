@@ -1,0 +1,13 @@
+{
+  "name": "diga-sim-adocao",
+  "version": "1.0.0",
+  "scripts": {
+    "build:css": "csso css/style.css --output css/style.min.css",
+    "build:js": "terser js/*.js -o js/app.min.js --compress --mangle",
+    "build": "npm run build:css && npm run build:js"
+  },
+  "devDependencies": {
+    "csso": "^5.0.0",
+    "terser": "^5.0.0"
+  }
+}
